@@ -1,0 +1,60 @@
+@font-face {
+  font-family:'Robo';
+  src:url('./main/fontes/robotoMOno/RobotoMono-ExtraLight.ttf');
+  font-family: 'is';
+  src:url('./main/fontes/island_Moments/IslandMoments-Regular.ttf')
+}
+
+*{
+  font-family: 'Robo',monospace;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+}
+/* Abaixo estou usando um seletor personalizado por isso do uso dos colchetes []  */
+
+[atributo=A]{
+  background-color: rgb(15, 32, 39);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition:all 0,5s ease-in-out;
+}
+
+/* O atributo active funciona somente quando o usuario clicar na tela */
+[atributo=A]:active {
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));;
+ 
+}
+
+[atributo=B]{
+  font-family: 'is';
+  font-size: 30px;
+  transition:all 0.3s ease-in-out;
+}
+[atributo=B]:hover {
+  /* transform: rotate(360deg); */
+  transform:translate(0px,-3px);
+  text-decoration: underline 2px solid;
+  text-shadow: white 2px 2px 10px;
+}
+
+[atributo=C]{
+  font-family: 'is';
+  font-size: 28px;
+  transition:all 0.3s ease-in-out;
+ 
+}
+[atributo=C]:hover {
+  /* transform: rotate(360deg); */
+  transform:translate(0px,-3px);
+  text-decoration: underline 2px solid;
+  text-shadow: white 2px 2px 10px;
+}

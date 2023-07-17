@@ -1,0 +1,40 @@
+:root {
+    --bg-button: #f0f0f0;
+    --border-button: solid 1px #888;
+   
+}
+
+/* usando as variaveis */
+.button {
+    font-size: 1.4em;
+    background-color: var(--bg-button);
+    border:none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    cursor: pointer;
+    outline: none;
+   
+}
+.button:active {
+   background-color: #ccc; 
+}
+/* aqui estamos criando esta classe para o botão ocupar 2 espaços*/
+.button.double {
+    grid-column: span 2;
+}
+/* aqui estamos criando esta classe para o botão ocupar 3 espaços*/
+.button.triple {
+    grid-column: span 3;
+}
+/*Vamos criar uma class chamda operation para quando o botão tiver está class operation ele ser de outra cor */
+.button.operation {
+    background-color: #fa8231;
+    /* E otexto será branco*/
+    color:#FFF;
+}
+/* Quando o usuario clicar na opração*/
+.button.operation:active {
+    background-color: #faB231cc;
+}
+
+/*Agora vamos aplicar as classes criadas de acordo com as propriedades que foram passadas */
